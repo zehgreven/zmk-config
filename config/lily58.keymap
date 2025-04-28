@@ -71,6 +71,8 @@
 &kp LEFT_SHIFT  &kp Z   &kp X   &kp C         &kp V         &kp B      &kp LEFT_BRACKET    &kp RBKT  &kp N      &kp M    &kp COMMA    &kp DOT       &mt STAR FSLH  &kp ENTER
                                 &kp LEFT_GUI  &kp LEFT_ALT  &kp SPACE  &mo 1               &mo 2     &kp SPACE  &kp ESC  &kp DEL
             >;
+
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
         lower_layer {
@@ -82,23 +84,21 @@
             //                     |      |      |      |        |  |       |      |       |       |
 
             bindings = <
-&kp F1     &kp F2    &kp F3  &kp F4    &kp F5      &kp F6                                        &kp F7     &kp F8     &kp F9     &kp F10   &kp F11   &kp F12
-&trans     &trans    &trans  &trans    &trans      &trans                                        &trans     &trans     &trans     &trans    &trans    &trans
-&kp GRAVE  &kp EXCL  &kp AT  &kp HASH  &kp DOLLAR  &kp PRCNT                                     &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &kp TILDE
-&trans     &trans    &trans  &trans    &trans      &trans     &kp LESS_THAN    &kp GREATER_THAN  &trans     &kp MINUS  &kp PLUS   &kp LBRC  &kp RBRC  &kp PIPE
-                             &trans    &trans      &trans     &trans           &trans            &trans     &trans     &trans
+&kp F12           &kp F1          &kp F2          &kp F3           &kp F4        &kp F6                                        &kp F6           &kp F7           &kp F8           &kp F9           &kp F10       &kp F11
+&kp TAB           &trans          &kp UP          &trans           &trans        &trans                                        &kp KP_ASTERISK  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_MINUS  &trans
+&kp LEFT_CONTROL  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans        &trans                                        &kp KP_SLASH     &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_NUMBER_7  &kp KP_PLUS   &kp KP_COMMA
+&kp LEFT_SHIFT    &trans          &trans          &trans           &trans        &trans     &kp LESS_THAN    &kp GREATER_THAN  &kp KP_N0        &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_DOT    &kp ENTER
+                                                  &kp LEFT_GUI     &kp LEFT_ALT  &kp SPACE  &trans           &trans            &kp SPACE        &kp ESC          &kp DEL
             >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         raise_layer {
             bindings = <
-&ext_power EP_ON  &ext_power EP_OFF  &ext_power EP_TOG  &trans  &trans  &trans                    &trans       &trans          &trans          &trans            &trans             &trans
-&trans            &trans             &trans             &trans  &trans  &trans                    &trans       &trans          &kp UP_ARROW    &trans            &trans             &trans
-&trans            &trans             &trans             &trans  &trans  &trans                    &trans       &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT         &trans             &trans
-&trans            &trans             &trans             &trans  &trans  &trans  &trans    &trans  &kp KP_PLUS  &kp MINUS       &kp EQUAL       &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH
-                                                        &trans  &trans  &trans  &trans    &trans  &trans       &trans          &trans
+&ext_power EP_ON  &ext_power EP_OFF  &ext_power EP_TOG  &trans        &trans        &trans                       &trans     &trans          &trans          &trans     &trans  &trans
+&kp TAB           &trans             &trans             &trans        &trans        &trans                       &trans     &trans          &kp UP_ARROW    &trans     &trans  &trans
+&kp LCTRL         &trans             &trans             &trans        &trans        &trans                       &trans     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &trans  &trans
+&kp LEFT_SHIFT    &trans             &trans             &trans        &trans        &trans     &trans    &trans  &trans     &trans          &trans          &trans     &trans  &kp ENTER
+                                                        &kp LEFT_GUI  &kp LEFT_ALT  &kp SPACE  &trans    &trans  &kp SPACE  &kp ESC         &kp DEL
             >;
         };
     };
