@@ -9,49 +9,7 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
-    combos {
-        compatible = "zmk,combos";
-
-        undo {
-            bindings = <&kp LC(Z)>;
-            key-positions = <37 25>;
-        };
-
-        copy {
-            bindings = <&kp LC(X)>;
-            key-positions = <26 38>;
-        };
-
-        cut {
-            bindings = <&kp LC(C)>;
-            key-positions = <27 39>;
-        };
-
-        paste {
-            bindings = <&kp LC(V)>;
-            key-positions = <28 40>;
-        };
-
-        left-parenthesis {
-            bindings = <&kp LEFT_PARENTHESIS>;
-            key-positions = <16 17>;
-        };
-
-        right-parenthesis {
-            bindings = <&kp RIGHT_PARENTHESIS>;
-            key-positions = <18 19>;
-        };
-
-        left-brace {
-            bindings = <&kp LEFT_BRACE>;
-            key-positions = <28 29>;
-        };
-
-        right-brace {
-            bindings = <&kp RIGHT_BRACE>;
-            key-positions = <30 31>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     keymap {
         compatible = "zmk,keymap";
@@ -84,11 +42,11 @@
             //                     |      |      |      |        |  |       |      |       |       |
 
             bindings = <
-&kp F12           &kp F1          &kp F2          &kp F3           &kp F4        &kp F6                                        &kp F6           &kp F7           &kp F8           &kp F9           &kp F10       &kp F11
-&kp TAB           &trans          &kp UP          &trans           &trans        &trans                                        &kp KP_ASTERISK  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_MINUS  &trans
-&kp LEFT_CONTROL  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans        &trans                                        &kp KP_SLASH     &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS   &kp KP_COMMA
-&kp LEFT_SHIFT    &trans          &trans          &trans           &trans        &trans     &kp LESS_THAN    &kp GREATER_THAN  &kp KP_N0        &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_DOT    &kp ENTER
-                                                  &kp LEFT_GUI     &kp LEFT_ALT  &kp SPACE  &trans           &trans            &kp SPACE        &kp ESC          &kp DEL
+&kp F12           &kp F1          &kp F2          &kp F3           &kp F4        &kp F6                                              &kp F6           &kp F7           &kp F8           &kp F9           &kp F10       &kp F11
+&kp TAB           &trans          &kp UP          &trans           &kp RA(F4)    &trans                                              &kp KP_ASTERISK  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_MINUS  &trans
+&kp LEFT_CONTROL  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans        &trans                                              &kp KP_SLASH     &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS   &kp KP_COMMA
+&kp LEFT_SHIFT    &trans          &trans          &trans           &trans        &kp PRINTSCREEN  &kp LESS_THAN    &kp GREATER_THAN  &kp KP_N0        &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_DOT    &kp ENTER
+                                                  &kp LEFT_GUI     &kp LEFT_ALT  &kp SPACE        &trans           &trans            &kp SPACE        &kp ESC          &kp DEL
             >;
         };
 
@@ -99,6 +57,16 @@
 &kp LCTRL         &trans             &trans             &trans        &trans        &trans                       &trans     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &trans  &trans
 &kp LEFT_SHIFT    &trans             &trans             &trans        &trans        &trans     &trans    &trans  &trans     &trans          &trans          &trans     &trans  &kp ENTER
                                                         &kp LEFT_GUI  &kp LEFT_ALT  &kp SPACE  &trans    &trans  &kp SPACE  &kp ESC         &kp DEL
+            >;
+        };
+
+        layer_3 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
             >;
         };
     };
