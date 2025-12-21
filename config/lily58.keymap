@@ -59,15 +59,5 @@
                                                         &kp LEFT_GUI  &kp LEFT_ALT  &kp SPACE  &trans    &trans  &kp SPACE  &kp ESC         &kp DEL
             >;
         };
-
-        layer_3 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
-            >;
-        };
     };
 };
