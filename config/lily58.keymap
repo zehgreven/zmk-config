@@ -54,10 +54,10 @@
 
         raise_layer {
             bindings = <
-&ext_power EP_ON  &ext_power EP_OFF  &ext_power EP_TOG  &bl BL_INC    &trans        &trans                       &trans      &trans          &trans          &trans     &trans  &trans
-&kp TAB           &trans             &trans             &trans        &trans        &trans                       &trans      &trans          &kp UP_ARROW    &trans     &trans  &trans
-&kp LCTRL         &trans             &trans             &trans        &trans        &trans                       &trans      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &trans  &trans
-&kp LEFT_SHIFT    &trans             &trans             &trans        &trans        &trans     &trans    &trans  &bt BT_PRV  &bt BT_NXT      &bt BT_CLR      &trans     &trans  &kp ENTER
+&ext_power EP_ON  &ext_power EP_OFF  &ext_power EP_TOG  &bl BL_INC    &trans        &trans                       &trans      &trans          &trans          &trans         &trans         &trans
+&kp TAB           &trans             &trans             &trans        &trans        &trans                       &trans      &trans          &kp UP_ARROW    &trans         &trans         &trans
+&kp LCTRL         &trans             &trans             &trans        &trans        &trans                       &trans      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT      &trans         &trans
+&kp LEFT_SHIFT    &trans             &trans             &trans        &trans        &trans     &trans    &trans  &bt BT_PRV  &bt BT_NXT      &bt BT_SEL 0    &bt BT_SEL 1   &bt BT_CLR_ALL &kp ENTER
                                                         &kp LEFT_GUI  &kp LEFT_ALT  &kp SPACE  &trans    &trans  &kp SPACE   &kp ESC         &kp DEL
             >;
         };
